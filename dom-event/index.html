@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <script type="" src="script.js"></script>
+
+    <form id="form-container" onsubmit="return validateForm()">
+        <div>
+            <label for="inputName">Name</label><br>
+            <input type="text" id="inputName">
+            <p id="errorName">Please provide a valid name.</p>
+        </div>
+        <div>
+            <label for="inputEmail">Email</label><br>
+            <input type="text" id="inputEmail">
+            <p id="errorEmail">Please enter your email</p>
+        </div>
+        <div>
+            <label for="inputPhone">Phone</label><br>
+            <input type="text" id="inputPhone">
+            <p id="errorPhone">Please provide a phone number</p>
+        </div>
+        <div>
+            <label for="inputSubject">Subject</label><br>
+            <input type="text" id="inputSubject">
+            <p id="errorSubject">Please enter subject</p>
+        </div>
+        <div>
+            <label for="inputMessage">Message</label><br>
+            <textarea id="inputMessage" rows="5" cols="25"></textarea>
+            <p id="errorMessage">Please enter your message</p>
+        </div>
+        <button id="btnSend" onclick="handleInput()">Send</button>
+    </form>
+
+    <div class="input-container">
+        <input type="text" id="inputField" placeholder="Nhập vào:">
+        <button id="btnSubmit" onclick="checkInput()">Submit</button>
+    </div>
+
+</body>
+
+</html>
